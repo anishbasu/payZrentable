@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+      <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+      <div class="container">
+        <div class="row">
+          <table class="table">
+            <tr>
+                <th>Month</th>
+                <th class="header">
+                      <div>
+                      <span>April A.</span>
+                      <div class="dropdown">
+                          <button class="btn btn-outline-success btn-sm" type="button" data-toggle="dropdown"><span class="fa fa-dollar"></span> 500</button>
+                          <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item bg-green" data-toggle="modal" data-target="#useCreditModal">Credit $500</a>
+                            <div class="dropdown-item">Deposit $30</div>
+                          </div>
+                      </div>
+                      </div>
+                  </th>
+                <th class="header">
+                      <div>
+                      <span>March B.</span>
+                      <div class="dropdown">
+                          <button class="btn btn-outline-success btn-sm" type="button" data-toggle="dropdown"><span class="fa fa-dollar"></span> 500</button>
+                          <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item bg-green" data-toggle="modal" data-target="#useCreditModal">Credit $500</a>
+                            <div class="dropdown-item">Deposit $30</div>
+                          </div>
+                      </div>
+                      </div>
+                  </th>
+                <th class="header">
+                      <div>
+                      <span>May C.</span>
+                      <div class="dropdown">
+                          <button class="btn btn-outline-success btn-sm" type="button" data-toggle="dropdown"><span class="fa fa-dollar"> 500</span></button>
+                          <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item bg-green" data-toggle="modal" data-target="#useCreditModal">Credit $500</a>
+                            <div class="dropdown-item">Deposit $30</div>
+                          </div>
+                      </div>
+                      </div>
+                  </th>
+            </tr>
+              <tr>
+                <td class="month">February '16</td>
+                  <td class="total">
+                      <div>
+                      <span>$<span>530</span></span>
+                      <div class="dropdown">
+                          <button class="btn btn-outline-success btn-sm" type="button" data-toggle="dropdown"><span class="fa fa-bars"></span></button>
+                          <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="#">Rent $500</a>
+                            <a class="dropdown-item" href="#">Deposit $30</a>
+                              <a class="dropdown-item" data-toggle="modal" data-target="#addPaymentModal">Add New <span class="fa fa-plus-square-o"></span> </a>
+                              <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Total $530</a>
+                          </div>
+                      </div>
+                      </div>
+                  </td>
+                  <td class="total"><div><span>$<span contenteditable="true">500</span></span></div></td>
+                  <td class="total"><div><span>$<span contenteditable="true">500</span></span></div></td>
+              </tr>
+              <tr>
+                <td class="month">March '16</td>
+                  <td class="total"><div><span>$<span contenteditable="true">500</span></span></div></td>
+                  <td class="total"><div><span>$<span contenteditable="true">500</span></span></div></td>
+                  <td class="total"><div><span>$<span contenteditable="true">500</span></span></div></td>
+              </tr>
+          </table>  
+        </div>
+      </div>
+      
+      <!-- Modals -->
+      <!-- Add Payment Modal -->
+        <div class="modal fade" id="addPaymentModal" tabindex="-1" role="dialog" aria-labelledby="addPaymentModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="addPaymentModalLabel">Edit Payments</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <table class="table">
+                  <tr>
+                    <th>Type</th>
+                    <th>Notes</th>
+                    <th>Amount</th>
+                    <th>Options</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select class="form-control" id="exampleSelect1">
+                              <option>Rent Payment</option>
+                              <option>Rent Credit</option>
+                              <option>Deposit</option>
+                            </select>
+                        </td>
+                        <td></td>
+                        <td>$500</td>
+                        <td><input type="checkbox"> Cash <input type="checkbox"> Credit</td>
+                        <td><span class="fa fa-times"></span></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select class="form-control" id="exampleSelect1">
+                              <option>Rent Payment</option>
+                              <option>Rent Credit</option>
+                              <option>Deposit</option>
+                            </select>
+                        </td>
+                        <td></td>
+                        <td>$500</td>
+                        <td><input type="checkbox"> Cash <input type="checkbox"> Credit</td>
+                        <td><span class="fa fa-times"></span></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select class="form-control" id="exampleSelect1">
+                              <option>Rent Payment</option>
+                              <option>Rent Credit</option>
+                              <option>Deposit</option>
+                            </select>
+                        </td>
+                        <td></td>
+                        <td>$500</td>
+                        <td><input type="checkbox"> Cash <input type="checkbox"> Credit</td>
+                        <td><span class="fa fa-times"></span></td>
+                    </tr>
+                </table>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success" data-dismiss="modal">Done</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+      <div class="modal fade" id="useCreditModal" tabindex="-1" role="dialog" aria-labelledby="useCreditModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="useCreditModalLabel">Use Credits</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <table class="table">
+                  <tr>
+                    <th>Month</th>
+                    <th>Amount</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select class="form-control" id="exampleSelect1">
+                              <option>First Month</option>
+                              <option>Last Month</option>
+                              <option>February '16</option>
+                              <option>March '16</option>
+                            </select>
+                        </td>
+
+                        <td>$500</td>
+                        <td><span class="fa fa-times"></span></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select class="form-control" id="exampleSelect1">
+                              <option>First Month</option>
+                              <option>Last Month</option>
+                              <option>February '16</option>
+                              <option>March '16</option>
+                            </select>
+                        </td>
+                        <td>$500</td>
+                        <td><span class="fa fa-times"></span></td>
+                    </tr>
+                </table>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success" data-dismiss="modal">Done</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+      <script src="main.js"></script>
+  </body>
+</html>

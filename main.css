@@ -1,0 +1,18 @@
+td.total>div{
+    display: flex;
+    justify-content: space-between;
+}
+
+th.header>div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bg-green{
+    border-bottom: solid 1px rgb(0, 196, 38);
+    border-top: solid 1px rgb(0, 196, 38);
+}
+
+td.total:hover{
+    background-color: #EEE;
+}
